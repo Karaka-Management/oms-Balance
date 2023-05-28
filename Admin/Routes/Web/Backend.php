@@ -8,12 +8,12 @@ use phpOMS\Router\RouteVerb;
 return [
     '^.*/controlling/balance/dashboard.*$' => [
         [
-            'dest' => '\Modules\Balance\Controller\BackendController:viewBalanceDashboard',
-            'verb' => RouteVerb::GET,
+            'dest'       => '\Modules\Balance\Controller\BackendController:viewBalanceDashboard',
+            'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
-                'type'  => PermissionType::READ,
-                'state' => PermissionState::BALANCE,
+                'type'   => PermissionType::READ,
+                'state'  => PermissionState::BALANCE,
             ],
         ],
     ],
