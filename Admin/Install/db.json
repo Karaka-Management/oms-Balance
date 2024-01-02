@@ -1,0 +1,91 @@
+{
+    "balance_balance": {
+        "name": "balance_balance",
+        "fields": {
+            "balance_balance_id": {
+                "name": "balance_balance_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "balance_balance_code": {
+                "name": "balance_balance_code",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
+            "balance_balance_name": {
+                "name": "balance_balance_name",
+                "type": "VARCHAR(255)",
+                "null": false
+            }
+        }
+    },
+    "balance_balance_element": {
+        "name": "balance_balance_element",
+        "fields": {
+            "balance_balance_element_id": {
+                "name": "balance_balance_element_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "balance_balance_element_code": {
+                "name": "balance_balance_element_code",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
+            "balance_balance_element_order": {
+                "name": "balance_balance_element_order",
+                "type": "INT",
+                "null": false
+            },
+            "balance_balance_element_parent": {
+                "name": "balance_balance_element_parent",
+                "type": "INT",
+                "null": true,
+                "foreignTable": "balance_balance_element",
+                "foreignKey": "balance_balance_element_id"
+            },
+            "balance_balance_element_balance": {
+                "name": "balance_balance_element_balance",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "balance_balance",
+                "foreignKey": "balance_balance_id"
+            }
+        }
+    },
+    "balance_balance_element_l11n": {
+        "name": "balance_balance_element_l11n",
+        "fields": {
+            "balance_balance_element_l11n_id": {
+                "name": "balance_balance_element_l11n_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "balance_balance_element_l11n_title": {
+                "name": "balance_balance_element_l11n_title",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
+            "balance_balance_element_l11n_element": {
+                "name": "balance_balance_element_l11n_element",
+                "type": "INT(11)",
+                "null": false,
+                "foreignTable": "balance_balance_element",
+                "foreignKey": "balance_balance_element_id"
+            },
+            "balance_balance_element_l11n_lang": {
+                "name": "balance_balance_element_l11n_lang",
+                "type": "VARCHAR(2)",
+                "null": false,
+                "foreignTable": "language",
+                "foreignKey": "language_639_1"
+            }
+        }
+    }
+}

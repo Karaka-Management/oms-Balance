@@ -1,0 +1,810 @@
+[
+    {
+        "name": "Assets",
+        "l11n": {
+            "en": "Assets",
+            "de": "Aktivseite"
+        },
+        "account": [],
+        "type": "category",
+        "formula": "",
+        "style": "category",
+        "children": [
+            {
+                "name": "A.A",
+                "l11n": {
+                    "en": "Capital Assets",
+                    "de": "Anlagevermögen"
+                },
+                "account": [],
+                "type": "category",
+                "formula": "",
+                "style": "category",
+                "children": [
+                    {
+                        "name": "A.A.I",
+                        "l11n": {
+                            "en": "Intangible Assets",
+                            "de": "Immaterielle Vermögensgegenständ"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": [
+                            {
+                                "name": "A.A.I.1",
+                                "l11n": {
+                                    "en": "Self-determined trademarks and similar rights and values",
+                                    "de": "Selbst geschaffene gewerbliche Schutzrechte und ähnliche Rechte und Werte"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.A.I.2",
+                                "l11n": {
+                                    "en": "Purchased licenses, trademarks and similar rights and values as well as licenses to such rights and values",
+                                    "de": "entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.A.I.3",
+                                "l11n": {
+                                    "en": "Goodwill",
+                                    "de": "Geschäfts- oder Firmenwert"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.A.I.4",
+                                "l11n": {
+                                    "en": "Advance payments made",
+                                    "de": "geleistete Anzahlungen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "A.A.II",
+                        "l11n": {
+                            "en": "Tangible Assets",
+                            "de": "Sachanlagen"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": [
+                            {
+                                "name": "A.A.II.1",
+                                "l11n": {
+                                    "en": "Properties, rights equivalent to real property and buildings, including buildings on third-party land",
+                                    "de": "Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.A.II.2",
+                                "l11n": {
+                                    "en": "Technical equipment and machinery",
+                                    "de": "technische Anlagen und Maschinen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.A.II.3",
+                                "l11n": {
+                                    "en": "Other equipment, operating and office equipment",
+                                    "de": "andere Anlagen, Betriebs- und Geschäftsausstattung"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.A.II.4",
+                                "l11n": {
+                                    "en": "Advance payments made and construction in progress",
+                                    "de": "geleistete Anzahlungen und Anlagen im Bau"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "A.A.III",
+                        "l11n": {
+                            "en": "Financial Assets",
+                            "de": "Finanzanlagen"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": [
+                            {
+                                "name": "A.A.III.1",
+                                "l11n": {
+                                    "en": "Shares in affiliated companies",
+                                    "de": "Anteile an verbundenen Unternehmen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.A.III.2",
+                                "l11n": {
+                                    "en": "Loans to affiliated companies",
+                                    "de": "Ausleihungen an verbundene Unternehmen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.A.III.3",
+                                "l11n": {
+                                    "en": "Other long-term equity investments",
+                                    "de": "Beteiligungen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.A.III.4",
+                                "l11n": {
+                                    "en": "Loans to other long-term investees and investors",
+                                    "de": "Ausleihungen an Unternehmen, mit denen ein Beteiligungsverhältnis besteht"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.A.III.5",
+                                "l11n": {
+                                    "en": "Long-term securities",
+                                    "de": "Wertpapiere des Anlagevermögens"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.A.III.6",
+                                "l11n": {
+                                    "en": "Other loans",
+                                    "de": "sonstige Ausleihungen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "A.B",
+                "l11n": {
+                    "en": "Current Assets",
+                    "de": "Umlaufvermögen"
+                },
+                "account": [],
+                "type": "category",
+                "formula": "",
+                "style": "category",
+                "children": [
+                    {
+                        "name": "A.B.I",
+                        "l11n": {
+                            "en": "Inventories",
+                            "de": "Vorräte"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": [
+                            {
+                                "name": "A.B.I.1",
+                                "l11n": {
+                                    "en": "Raw materials, consumables and supplies",
+                                    "de": "Roh-, Hilfs- und Betriebsstoffe"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.B.I.2",
+                                "l11n": {
+                                    "en": "Work in progress",
+                                    "de": "unfertige Erzeugnisse, unfertige Leistungen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.B.I.3",
+                                "l11n": {
+                                    "en": "Finished goods and merchandise",
+                                    "de": "fertige Erzeugnisse und Waren"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.B.I.4",
+                                "l11n": {
+                                    "en": "Advance payments made",
+                                    "de": "geleistete Anzahlungen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "A.B.II",
+                        "l11n": {
+                            "en": "Accounts Receivables and other Payables",
+                            "de": "Forderungen und sonstige Vermögensgegenstände"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": [
+                            {
+                                "name": "A.B.II.1",
+                                "l11n": {
+                                    "en": "Trade receivables",
+                                    "de": "Forderungen aus Lieferungen und Leistungen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.B.II.2",
+                                "l11n": {
+                                    "en": "Receivables from affiliated companies",
+                                    "de": "Forderungen gegen verbundene Unternehmen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.B.II.3",
+                                "l11n": {
+                                    "en": "Receivables from other long-term investees and investors",
+                                    "de": "Forderungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.B.II.4",
+                                "l11n": {
+                                    "en": "Other assets or other liabilities",
+                                    "de": "sonstige Vermögensgegenstände"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "A.B.III",
+                        "l11n": {
+                            "en": "Securities",
+                            "de": "Wertpapiere"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": [
+                            {
+                                "name": "A.B.III.1",
+                                "l11n": {
+                                    "en": "Shares in affiliated companies",
+                                    "de": "Anteile an verbundenen Unternehmen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "A.B.III.2",
+                                "l11n": {
+                                    "en": "Other securities",
+                                    "de": "sonstige Wertpapiere"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "A.B.IV",
+                        "l11n": {
+                            "en": "Cash Assets",
+                            "de": "Kassenbestand, Bundesbankguthaben, Guthaben bei Kreditinstituten und Schecks"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "A.C",
+                "l11n": {
+                    "en": "Accrual",
+                    "de": "Rechnungsabgrenzungsposten"
+                },
+                "account": [],
+                "type": "category",
+                "formula": "",
+                "style": "category",
+                "children": []
+            },
+            {
+                "name": "A.D",
+                "l11n": {
+                    "en": "Deferred tax assets",
+                    "de": "Aktive latente Steuern"
+                },
+                "account": [],
+                "type": "category",
+                "formula": "",
+                "style": "category",
+                "children": []
+            },
+            {
+                "name": "A.E",
+                "l11n": {
+                    "en": "Difference",
+                    "de": "Aktiver Unterschiedsbetrag aus der Vermögensverrechnung"
+                },
+                "account": [],
+                "type": "category",
+                "formula": "",
+                "style": "category",
+                "children": []
+            }
+        ]
+    },
+    {
+        "name": "Liabilities",
+        "l11n": {
+            "en": "Liabilities",
+            "de": "Passivseite"
+        },
+        "account": [],
+        "type": "category",
+        "formula": "",
+        "style": "category",
+        "children": [
+            {
+                "name": "P.A",
+                "l11n": {
+                    "en": "Equity",
+                    "de": "Eigenkapital"
+                },
+                "account": [],
+                "type": "category",
+                "formula": "",
+                "style": "category",
+                "children": [
+                    {
+                        "name": "P.A.I",
+                        "l11n": {
+                            "en": "Subscribed Capital",
+                            "de": "Gezeichnetes Kapital"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    },
+                    {
+                        "name": "P.A.II",
+                        "l11n": {
+                            "en": "Capital Reserve",
+                            "de": "Kapitalrücklage"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    },
+                    {
+                        "name": "P.A.III",
+                        "l11n": {
+                            "en": "Retained Earnings",
+                            "de": "Gewinnrücklagen"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": [
+                            {
+                                "name": "P.A.III.1",
+                                "l11n": {
+                                    "en": "Mandatory reserve",
+                                    "de": "gesetzliche Rücklage"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "P.A.III.2",
+                                "l11n": {
+                                    "en": "Reserve for shares in a parent or majority investor",
+                                    "de": "Rücklage für Anteile an einem herrschenden oder mehrheitlich beteiligten Unternehmen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "P.A.III.3",
+                                "l11n": {
+                                    "en": "Reserves provided for by the article of association",
+                                    "de": "satzungsmäßige Rücklagen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "P.A.III.4",
+                                "l11n": {
+                                    "en": "Other retained earnings",
+                                    "de": "andere Gewinnrücklagen"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "P.A.IV",
+                        "l11n": {
+                            "en": "Earnings carryover/Loss carryover",
+                            "de": "Gewinnvortrag/Verlustvortrag"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    },
+                    {
+                        "name": "P.A.V",
+                        "l11n": {
+                            "en": "Annual Net Profit/Annual Net Deficit",
+                            "de": "Jahresüberschuss/Jahresfehlbetrag"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "P.B",
+                "l11n": {
+                    "en": "Provisions",
+                    "de": "Rückstellungen"
+                },
+                "account": [],
+                "type": "category",
+                "formula": "",
+                "style": "category",
+                "children": [
+                    {
+                        "name": "P.B.1",
+                        "l11n": {
+                            "en": "Provisions for pensions and similar obligations",
+                            "de": "Rückstellungen für Pensionen und ähnliche Verpflichtungen"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    },
+                    {
+                        "name": "P.B.2",
+                        "l11n": {
+                            "en": "Provisions for taxes",
+                            "de": "Steuerrückstellungen"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    },
+                    {
+                        "name": "P.B.3",
+                        "l11n": {
+                            "en": "Other provisions",
+                            "de": "sonstige Rückstellungen"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "P.C",
+                "l11n": {
+                    "en": "Liabilities",
+                    "de": "Verbindlichkeiten"
+                },
+                "account": [],
+                "type": "category",
+                "formula": "",
+                "style": "category",
+                "children": [
+                    {
+                        "name": "P.C.1",
+                        "l11n": {
+                            "en": "Bonds",
+                            "de": "Anleihen"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": [
+                            {
+                                "name": "P.C.1.a",
+                                "l11n": {
+                                    "en": "thereof convertible",
+                                    "de": "davon konvertibel"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "P.C.2",
+                        "l11n": {
+                            "en": "Liabilities to financial institutions",
+                            "de": "Verbindlichkeiten gegenüber Kreditinstituten"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    },
+                    {
+                        "name": "P.C.3",
+                        "l11n": {
+                            "en": "Advance payments received on orders",
+                            "de": "erhaltene Anzahlungen auf Bestellungen"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    },
+                    {
+                        "name": "P.C.4",
+                        "l11n": {
+                            "en": "Trade payables",
+                            "de": "Verbindlichkeiten aus Lieferungen und Leistungen"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    },
+                    {
+                        "name": "P.C.5",
+                        "l11n": {
+                            "en": "Liabilities on bills accepted and drawn",
+                            "de": "Verbindlichkeiten aus der Annahme gezogener Wechsel und der Ausstellung eigener Wechsel"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    },
+                    {
+                        "name": "P.C.6",
+                        "l11n": {
+                            "en": "Liabilities to affiliated companies",
+                            "de": "Verbindlichkeiten gegenüber verbundenen Unternehmen"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    },
+                    {
+                        "name": "P.C.7",
+                        "l11n": {
+                            "en": "Liabilities to companies invested in",
+                            "de": "Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": []
+                    },
+                    {
+                        "name": "P.C.8",
+                        "l11n": {
+                            "en": "Other liabilities",
+                            "de": "sonstige Verbindlichkeiten"
+                        },
+                        "account": [],
+                        "type": "category",
+                        "formula": "",
+                        "style": "category",
+                        "children": [
+                            {
+                                "name": "P.C.8.a",
+                                "l11n": {
+                                    "en": "thereof from taxes",
+                                    "de": "davon aus Steuern"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            },
+                            {
+                                "name": "P.C.8.b",
+                                "l11n": {
+                                    "en": "thereof social security liabilities",
+                                    "de": "davon im Rahmen der sozialen Sicherheit"
+                                },
+                                "account": [],
+                                "type": "category",
+                                "formula": "",
+                                "style": "category",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "P.D",
+                "l11n": {
+                    "en": "Accrual",
+                    "de": "Rechnungsabgrenzungsposten"
+                },
+                "account": [],
+                "type": "category",
+                "formula": "",
+                "style": "category",
+                "children": []
+            },
+            {
+                "name": "P.E",
+                "l11n": {
+                    "en": "Deferred tax liabilities",
+                    "de": "Passive latente Steuern"
+                },
+                "account": [],
+                "type": "category",
+                "formula": "",
+                "style": "category",
+                "children": []
+            }
+        ]
+    }
+]
