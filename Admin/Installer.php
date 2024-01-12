@@ -78,12 +78,8 @@ final class Installer extends InstallerAbstract
             $request->setData('code', \strtolower(\basename($file)));
             $request->setData('name', \strtr(\basename($file), '_', ' '));
 
-            $responseData = $module->apiBalanceCreate($request, $response);
-
+            $module->apiBalanceCreate($request, $response);
             $responseData = $response->getData('');
-            if (!\is_array($responseData)) {
-                continue;
-            }
 
             $balance = \is_array($responseData['response'])
                 ? $responseData['response']
@@ -121,11 +117,7 @@ final class Installer extends InstallerAbstract
             }
 
             $module->apiBalanceElementCreate($request, $response);
-
             $responseData = $response->getData('');
-            if (!\is_array($responseData)) {
-                continue;
-            }
 
             $balanceElement = \is_array($responseData['response'])
                 ? $responseData['response']

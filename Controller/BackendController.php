@@ -14,7 +14,9 @@ declare(strict_types=1);
 
 namespace Modules\Balance\Controller;
 
+use Modules\Balance\Models\BalanceElementMapper;
 use phpOMS\Contract\RenderableInterface;
+use phpOMS\DataStorage\Database\Query\OrderType;
 use phpOMS\Message\RequestAbstract;
 use phpOMS\Message\ResponseAbstract;
 use phpOMS\Views\View;
@@ -46,6 +48,15 @@ final class BackendController extends Controller
         $view = new View($this->app->l11nManager, $request, $response);
         $view->setTemplate('/Modules/Balance/Theme/Backend/balance-dashboard');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1006501001, $request, $response);
+
+        $elements = BalanceElementMapper::getAll()
+            ->with('l11n')
+            ->where('balance', $request->getDataInt('balance') ?? 1)
+            ->where('l11n/language', $response->header->l11n->language)
+            ->sort('order', OrderType::ASC)
+            ->execute();
+
+        $view->data['elements'] = $elements;
 
         return $view;
     }
