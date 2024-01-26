@@ -42,7 +42,7 @@ class Balance
     public function toArray() : array
     {
         return [
-            'id'    => $this->id,
+            'id' => $this->id,
         ];
     }
 

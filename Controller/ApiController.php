@@ -21,7 +21,6 @@ use Modules\Balance\Models\BalanceElementMapper;
 use Modules\Balance\Models\BalanceMapper;
 use phpOMS\Localization\BaseStringL11n;
 use phpOMS\Localization\ISO639x1Enum;
-use phpOMS\Message\Http\HttpResponse;
 use phpOMS\Message\Http\RequestStatusCode;
 use phpOMS\Message\RequestAbstract;
 use phpOMS\Message\ResponseAbstract;
@@ -95,7 +94,7 @@ final class ApiController extends Controller
      */
     private function createBalanceFromRequest(RequestAbstract $request) : Balance
     {
-        $balance          = new Balance();
+        $balance       = new Balance();
         $balance->code = (string) $request->getData('code');
         $balance->name = (string) $request->getData('name');
 
@@ -162,12 +161,16 @@ final class ApiController extends Controller
      */
     private function createBalanceElementFromRequest(RequestAbstract $request) : BalanceElement
     {
-        $element = new BalanceElement();
-        $element->code = $request->getDataString('code') ?? '';
+        $element          = new BalanceElement();
+        $element->code    = $request->getDataString('code') ?? '';
         $element->balance = $request->getDataInt('balance') ?? 0;
-        $element->order = $request->getDataInt('order') ?? 0;
+        $element->order   = $request->getDataInt('order') ?? 0;
+        $element->parent  = $request->getDataInt('parent');
 
-        $element->setL11n($request->getDataString('content') ?? '', $request->getDataString('language') ?? ISO639x1Enum::_EN);
+        $element->setL11n(
+            $request->getDataString('content') ?? '',
+            ISO639x1Enum::tryFromValue($request->getDataString('language')) ?? ISO639x1Enum::_EN
+        );
 
         return $element;
     }
@@ -210,12 +213,10 @@ final class ApiController extends Controller
      */
     private function createBalanceElementL11nFromRequest(RequestAbstract $request) : BaseStringL11n
     {
-        $elementL11n      = new BaseStringL11n();
-        $elementL11n->ref = $request->getDataInt('ref') ?? 0;
-        $elementL11n->setLanguage(
-            $request->getDataString('language') ?? $request->header->l11n->language
-        );
-        $elementL11n->content = $request->getDataString('content') ?? '';
+        $elementL11n           = new BaseStringL11n();
+        $elementL11n->ref      = $request->getDataInt('ref') ?? 0;
+        $elementL11n->language = ISO639x1Enum::tryFromValue($request->getDataString('language')) ?? $request->header->l11n->language;
+        $elementL11n->content  = $request->getDataString('content') ?? '';
 
         return $elementL11n;
     }

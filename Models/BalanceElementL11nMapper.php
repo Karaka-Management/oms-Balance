@@ -37,9 +37,9 @@ final class BalanceElementL11nMapper extends DataMapperFactory
      * @since 1.0.0
      */
     public const COLUMNS = [
-        'balance_balance_element_l11n_id'          => ['name' => 'balance_balance_element_l11n_id',          'type' => 'int',    'internal' => 'id'],
-        'balance_balance_element_l11n_title'        => ['name' => 'balance_balance_element_l11n_title',        'type' => 'string', 'internal' => 'content', 'autocomplete' => true],
-        'balance_balance_element_l11n_element'  => ['name' => 'balance_balance_element_l11n_element',  'type' => 'int',    'internal' => 'ref'],
+        'balance_balance_element_l11n_id'      => ['name' => 'balance_balance_element_l11n_id',          'type' => 'int',    'internal' => 'id'],
+        'balance_balance_element_l11n_title'   => ['name' => 'balance_balance_element_l11n_title',        'type' => 'string', 'internal' => 'content', 'autocomplete' => true],
+        'balance_balance_element_l11n_element' => ['name' => 'balance_balance_element_l11n_element',  'type' => 'int',    'internal' => 'ref'],
         'balance_balance_element_l11n_lang'    => ['name' => 'balance_balance_element_l11n_lang',    'type' => 'string', 'internal' => 'language'],
     ];
 

@@ -37,11 +37,11 @@ final class BalanceElementMapper extends DataMapperFactory
      * @since 1.0.0
      */
     public const COLUMNS = [
-        'balance_balance_element_id'          => ['name' => 'balance_balance_element_id',          'type' => 'int',    'internal' => 'id'],
-        'balance_balance_element_code'        => ['name' => 'balance_balance_element_code',        'type' => 'string', 'internal' => 'code', 'autocomplete' => true],
-        'balance_balance_element_order'        => ['name' => 'balance_balance_element_order',        'type' => 'int', 'internal' => 'order'],
-        'balance_balance_element_parent'        => ['name' => 'balance_balance_element_parent',        'type' => 'int', 'internal' => 'parent'],
-        'balance_balance_element_balance'        => ['name' => 'balance_balance_element_balance',        'type' => 'int', 'internal' => 'balance'],
+        'balance_balance_element_id'      => ['name' => 'balance_balance_element_id',          'type' => 'int',    'internal' => 'id'],
+        'balance_balance_element_code'    => ['name' => 'balance_balance_element_code',        'type' => 'string', 'internal' => 'code', 'autocomplete' => true],
+        'balance_balance_element_order'   => ['name' => 'balance_balance_element_order',        'type' => 'int', 'internal' => 'order'],
+        'balance_balance_element_parent'  => ['name' => 'balance_balance_element_parent',        'type' => 'int', 'internal' => 'parent'],
+        'balance_balance_element_balance' => ['name' => 'balance_balance_element_balance',        'type' => 'int', 'internal' => 'balance'],
     ];
 
     /**
@@ -57,7 +57,7 @@ final class BalanceElementMapper extends DataMapperFactory
             'self'     => 'balance_balance_element_l11n_element',
             'column'   => 'content',
             'external' => null,
-        ]
+        ],
     ];
 
     /**
