@@ -14,7 +14,9 @@ declare(strict_types=1);
 
 namespace Modules\Balance\Controller;
 
+use Modules\Balance\Models\BalanceElementL11nMapper;
 use Modules\Balance\Models\BalanceElementMapper;
+use Modules\Balance\Models\BalanceMapper;
 use phpOMS\Contract\RenderableInterface;
 use phpOMS\DataStorage\Database\Query\OrderType;
 use phpOMS\Message\RequestAbstract;
@@ -49,14 +51,29 @@ final class BackendController extends Controller
         $view->setTemplate('/Modules/Balance/Theme/Backend/balance-dashboard');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1006501001, $request, $response);
 
-        $elements = BalanceElementMapper::getAll()
+        $view->data['elements'] = BalanceElementMapper::getAll()
             ->with('l11n')
-            ->where('balance', $request->getDataInt('balance') ?? 1)
-            ->where('l11n/language', $response->header->l11n->language)
+            ->with('accounts')
+            ->with('accounts/l11n')
+            ->where('balance', $request->getDataInt('structure') ?? 1)
+            ->where('l11n/language', $request->getDataString('language') ?? $response->header->l11n->language)
+            ->where('accounts/l11n/language', $request->getDataString('language') ?? $response->header->l11n->language)
             ->sort('order', OrderType::ASC)
             ->execute();
 
-        $view->data['elements'] = $elements;
+        $view->data['structures'] = BalanceMapper::getAll()
+            ->execute();
+
+        $view->data['languages'] = [];
+        if (!empty($view->data['elements'])) {
+            $tempL11ns = BalanceElementL11nMapper::getAll()
+                ->where('ref', \reset($view->data['elements'])->id)
+                ->execute();
+
+            foreach ($tempL11ns as $l11n) {
+                $view->data['languages'][] = $l11n->language;
+            }
+        }
 
         return $view;
     }

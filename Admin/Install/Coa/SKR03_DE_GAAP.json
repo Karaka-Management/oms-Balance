@@ -8,7 +8,8 @@
         "account": [],
         "type": "category",
         "formula": "",
-        "style": "category",
+        "style": "total",
+        "expanded": true,
         "children": [
             {
                 "name": "A.A",
@@ -27,7 +28,7 @@
                             "en": "Intangible Assets",
                             "de": "Immaterielle Vermögensgegenständ"
                         },
-                        "account": [],
+                        "account": [5],
                         "type": "category",
                         "formula": "",
                         "style": "category",
@@ -38,7 +39,7 @@
                                     "en": "Self-determined trademarks and similar rights and values",
                                     "de": "Selbst geschaffene gewerbliche Schutzrechte und ähnliche Rechte und Werte"
                                 },
-                                "account": [],
+                                "account": [43,44,45,46,47,48],
                                 "type": "category",
                                 "formula": "",
                                 "style": "category",
@@ -50,7 +51,7 @@
                                     "en": "Purchased licenses, trademarks and similar rights and values as well as licenses to such rights and values",
                                     "de": "entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten"
                                 },
-                                "account": [],
+                                "account": [10,15,20,25,27,30],
                                 "type": "category",
                                 "formula": "",
                                 "style": "category",
@@ -62,7 +63,7 @@
                                     "en": "Goodwill",
                                     "de": "Geschäfts- oder Firmenwert"
                                 },
-                                "account": [],
+                                "account": [35],
                                 "type": "category",
                                 "formula": "",
                                 "style": "category",
@@ -74,7 +75,7 @@
                                     "en": "Advance payments made",
                                     "de": "geleistete Anzahlungen"
                                 },
-                                "account": [],
+                                "account": [38,39],
                                 "type": "category",
                                 "formula": "",
                                 "style": "category",
@@ -99,7 +100,7 @@
                                     "en": "Properties, rights equivalent to real property and buildings, including buildings on third-party land",
                                     "de": "Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken"
                                 },
-                                "account": [],
+                                "account": [50,59,60,65,70,75,80,85,90,100,110,111,112,113,115,140,145,146,147,148,149,160,165,170,175,176,177,178,179,190,191,192,193,194],
                                 "type": "category",
                                 "formula": "",
                                 "style": "category",
@@ -111,7 +112,7 @@
                                     "en": "Technical equipment and machinery",
                                     "de": "technische Anlagen und Maschinen"
                                 },
-                                "account": [],
+                                "account": [200,210,220,240,260,280],
                                 "type": "category",
                                 "formula": "",
                                 "style": "category",
@@ -123,7 +124,7 @@
                                     "en": "Other equipment, operating and office equipment",
                                     "de": "andere Anlagen, Betriebs- und Geschäftsausstattung"
                                 },
-                                "account": [],
+                                "account": [300,310,320,350,380,400,410,420,430,440,450,460,480,485,490],
                                 "type": "category",
                                 "formula": "",
                                 "style": "category",
@@ -135,7 +136,7 @@
                                     "en": "Advance payments made and construction in progress",
                                     "de": "geleistete Anzahlungen und Anlagen im Bau"
                                 },
-                                "account": [],
+                                "account": [79,120,129,150,159,180,189,195,199,290,299,498,499],
                                 "type": "category",
                                 "formula": "",
                                 "style": "category",
@@ -160,7 +161,7 @@
                                     "en": "Shares in affiliated companies",
                                     "de": "Anteile an verbundenen Unternehmen"
                                 },
-                                "account": [],
+                                "account": [500,501,502,503,504,509],
                                 "type": "category",
                                 "formula": "",
                                 "style": "category",
@@ -172,7 +173,7 @@
                                     "en": "Loans to affiliated companies",
                                     "de": "Ausleihungen an verbundene Unternehmen"
                                 },
-                                "account": [],
+                                "account": [505,506,507,508,520,523,524],
                                 "type": "category",
                                 "formula": "",
                                 "style": "category",
@@ -184,7 +185,7 @@
                                     "en": "Other long-term equity investments",
                                     "de": "Beteiligungen"
                                 },
-                                "account": [],
+                                "account": [510,513,516,517,518,519,570],
                                 "type": "category",
                                 "formula": "",
                                 "style": "category",
@@ -208,7 +209,7 @@
                                     "en": "Long-term securities",
                                     "de": "Wertpapiere des Anlagevermögens"
                                 },
-                                "account": [],
+                                "account": [525,530,535,538],
                                 "type": "category",
                                 "formula": "",
                                 "style": "category",
@@ -220,7 +221,7 @@
                                     "en": "Other loans",
                                     "de": "sonstige Ausleihungen"
                                 },
-                                "account": [],
+                                "account": [540,550,580,582,583,584,586,590],
                                 "type": "category",
                                 "formula": "",
                                 "style": "category",
@@ -418,7 +419,7 @@
                 "name": "A.C",
                 "l11n": {
                     "en": "Accrual",
-                    "de": "Rechnungsabgrenzungsposten"
+                    "de": "ARAP"
                 },
                 "account": [],
                 "type": "category",
@@ -461,7 +462,8 @@
         "account": [],
         "type": "category",
         "formula": "",
-        "style": "category",
+        "style": "total",
+        "expanded": true,
         "children": [
             {
                 "name": "P.A",
@@ -469,7 +471,7 @@
                     "en": "Equity",
                     "de": "Eigenkapital"
                 },
-                "account": [],
+                "account": [810,811,812,813,815,819],
                 "type": "category",
                 "formula": "",
                 "style": "category",
@@ -480,7 +482,7 @@
                             "en": "Subscribed Capital",
                             "de": "Gezeichnetes Kapital"
                         },
-                        "account": [],
+                        "account": [800,809],
                         "type": "category",
                         "formula": "",
                         "style": "category",
@@ -651,7 +653,7 @@
                             "en": "Bonds",
                             "de": "Anleihen"
                         },
-                        "account": [],
+                        "account": [600,601,605,610,615,616,620,625],
                         "type": "category",
                         "formula": "",
                         "style": "category",
@@ -676,7 +678,7 @@
                             "en": "Liabilities to financial institutions",
                             "de": "Verbindlichkeiten gegenüber Kreditinstituten"
                         },
-                        "account": [],
+                        "account": [630, 631, 640, 650,660,661,670,680,690,699],
                         "type": "category",
                         "formula": "",
                         "style": "category",
@@ -724,7 +726,7 @@
                             "en": "Liabilities to affiliated companies",
                             "de": "Verbindlichkeiten gegenüber verbundenen Unternehmen"
                         },
-                        "account": [],
+                        "account": [700,701,705,710],
                         "type": "category",
                         "formula": "",
                         "style": "category",
@@ -736,7 +738,7 @@
                             "en": "Liabilities to companies invested in",
                             "de": "Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht"
                         },
-                        "account": [],
+                        "account": [715,716,720,725],
                         "type": "category",
                         "formula": "",
                         "style": "category",
@@ -748,7 +750,7 @@
                             "en": "Other liabilities",
                             "de": "sonstige Verbindlichkeiten"
                         },
-                        "account": [],
+                        "account": [730,731,740,750,755,760,761,764,767,770,771,774,777,780,781,784,787,790,799],
                         "type": "category",
                         "formula": "",
                         "style": "category",
@@ -785,7 +787,7 @@
                 "name": "P.D",
                 "l11n": {
                     "en": "Accrual",
-                    "de": "Rechnungsabgrenzungsposten"
+                    "de": "PRAP"
                 },
                 "account": [],
                 "type": "category",

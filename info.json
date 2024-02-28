@@ -16,6 +16,7 @@
     },
     "directory": "Balance",
     "dependencies": {
+        "Accounting": "*",
         "Controlling": "*"
     },
     "providing": {

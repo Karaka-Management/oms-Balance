@@ -8,7 +8,8 @@
         "account": [],
         "type": "category",
         "formula": "",
-        "style": "category",
+        "style": "total",
+        "expanded": true,
         "children": [
             {
                 "name": "A.A",
@@ -373,7 +374,8 @@
         "account": [],
         "type": "category",
         "formula": "",
-        "style": "category",
+        "style": "total",
+        "expanded": true,
         "children": [
             {
                 "name": "P.A",

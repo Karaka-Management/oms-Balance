@@ -14,6 +14,7 @@ declare(strict_types=1);
 
 namespace Modules\Balance\Controller;
 
+use Modules\Accounting\Models\NullAccountAbstract;
 use Modules\Balance\Models\Balance;
 use Modules\Balance\Models\BalanceElement;
 use Modules\Balance\Models\BalanceElementL11nMapper;
@@ -163,9 +164,17 @@ final class ApiController extends Controller
     {
         $element          = new BalanceElement();
         $element->code    = $request->getDataString('code') ?? '';
+        $element->formula    = $request->getDataString('formula') ?? '';
+        $element->style    = $request->getDataString('style') ?? '';
         $element->balance = $request->getDataInt('balance') ?? 0;
         $element->order   = $request->getDataInt('order') ?? 0;
+        $element->expanded   = $request->getDataBool('expanded') ?? false;
         $element->parent  = $request->getDataInt('parent');
+
+        $accounts = $request->getDataList('accounts');
+        foreach ($accounts as $account) {
+            $element->accounts[] = new NullAccountAbstract((int) $account);
+        }
 
         $element->setL11n(
             $request->getDataString('content') ?? '',

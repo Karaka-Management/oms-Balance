@@ -14,6 +14,8 @@ declare(strict_types=1);
 
 namespace Modules\Balance\Admin;
 
+use Modules\Accounting\Models\AccountAbstract;
+use Modules\Accounting\Models\AccountAbstractMapper;
 use Modules\Balance\Controller\ApiController;
 use phpOMS\Application\ApplicationAbstract;
 use phpOMS\Config\SettingsInterface;
@@ -62,7 +64,7 @@ final class Installer extends InstallerAbstract
     private static function importStructures(ApplicationAbstract $app) : void
     {
         /** @var \Modules\Balance\Controller\ApiController $module */
-        $module = $app->moduleManager->getModuleInstance('Balance', 'Api');
+        $module = $app->moduleManager->get('Balance', 'Api');
 
         $structures = \scandir(__DIR__ . '/Install/Coa');
         foreach ($structures as $file) {
@@ -74,8 +76,8 @@ final class Installer extends InstallerAbstract
             $request  = new HttpRequest();
 
             $request->header->account = 1;
-            $request->setData('code', \strtolower(\basename($file)));
-            $request->setData('name', \strtr(\basename($file), '_', ' '));
+            $request->setData('code', \strtolower(\basename($file, '.json')));
+            $request->setData('name', \strtr(\basename($file, '.json'), '_', ' '));
 
             $module->apiBalanceCreate($request, $response);
             $responseData = $response->getData('');
@@ -102,14 +104,29 @@ final class Installer extends InstallerAbstract
             $request->setData('code', $element['name']);
             $request->setData('content', \reset($element['l11n']));
             $request->setData('language', \array_keys($element['l11n'])[0] ?? 'en');
-            $request->setData('accounts', \implode(',', $element['account']));
             $request->setData('formula', $element['formula']);
             $request->setData('type', $element['type']);
+            $request->setData('style', $element['style']);
             $request->setData('balance', $structure);
             $request->setData('order', $order);
+            $request->setData('expanded', $element['expanded'] ?? false);
 
             if ($parent !== null) {
                 $request->setData('parent', $parent);
+            }
+
+            if (!empty($element['account'])) {
+                $accountObjects = AccountAbstractMapper::getAll()
+                    ->where('code', \array_map(function($account) {
+                        return (string) $account;
+                    }, $element['account']), 'IN')
+                    ->execute();
+
+                $request->setData('accounts', \implode(',',
+                    \array_map(function (AccountAbstract $account) {
+                        return $account->id;
+                    }, $accountObjects)
+                ));
             }
 
             $module->apiBalanceElementCreate($request, $response);
@@ -130,7 +147,7 @@ final class Installer extends InstallerAbstract
                 $request  = new HttpRequest();
 
                 $request->header->account = 1;
-                $request->setData('title', $l11n);
+                $request->setData('content', $l11n);
                 $request->setData('language', $language);
                 $request->setData('ref', $balanceElement['id']);
 

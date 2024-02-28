@@ -36,9 +36,24 @@
                 "type": "VARCHAR(255)",
                 "null": false
             },
+            "balance_balance_element_formula": {
+                "name": "balance_balance_element_formula",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
+            "balance_balance_element_style": {
+                "name": "balance_balance_element_style",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
             "balance_balance_element_order": {
                 "name": "balance_balance_element_order",
                 "type": "INT",
+                "null": false
+            },
+            "balance_balance_element_expanded": {
+                "name": "balance_balance_element_expanded",
+                "type": "TINYINT(1)",
                 "null": false
             },
             "balance_balance_element_parent": {
@@ -85,6 +100,37 @@
                 "null": false,
                 "foreignTable": "language",
                 "foreignKey": "language_639_1"
+            }
+        }
+    },
+    "balance_balance_element_rel": {
+        "name": "balance_balance_element_rel",
+        "fields": {
+            "balance_balance_element_rel_id": {
+                "name": "balance_balance_element_rel_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "balance_balance_element_rel_order": {
+                "name": "balance_balance_element_rel_order",
+                "type": "INT",
+                "null": true
+            },
+            "balance_balance_element_rel_account": {
+                "name": "balance_balance_element_rel_account",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "accounting_account",
+                "foreignKey": "accounting_account_id"
+            },
+            "balance_balance_element_rel_element": {
+                "name": "balance_balance_element_rel_element",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "balance_balance_element",
+                "foreignKey": "balance_balance_element_id"
             }
         }
     }
