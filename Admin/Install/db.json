@@ -18,6 +18,19 @@
                 "name": "balance_balance_name",
                 "type": "VARCHAR(255)",
                 "null": false
+            },
+            "balance_balance_default": {
+                "name": "balance_balance_default",
+                "type": "TINYINT",
+                "null": false
+            },
+            "balance_balance_unit": {
+                "name": "balance_balance_unit",
+                "type": "INT",
+                "null": true,
+                "default": null,
+                "foreignTable": "unit",
+                "foreignKey": "unit_id"
             }
         }
     },
