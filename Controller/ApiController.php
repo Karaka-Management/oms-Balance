@@ -162,14 +162,14 @@ final class ApiController extends Controller
      */
     private function createBalanceElementFromRequest(RequestAbstract $request) : BalanceElement
     {
-        $element          = new BalanceElement();
-        $element->code    = $request->getDataString('code') ?? '';
-        $element->formula    = $request->getDataString('formula') ?? '';
+        $element           = new BalanceElement();
+        $element->code     = $request->getDataString('code') ?? '';
+        $element->formula  = $request->getDataString('formula') ?? '';
         $element->style    = $request->getDataString('style') ?? '';
-        $element->balance = $request->getDataInt('balance') ?? 0;
-        $element->order   = $request->getDataInt('order') ?? 0;
-        $element->expanded   = $request->getDataBool('expanded') ?? false;
-        $element->parent  = $request->getDataInt('parent');
+        $element->balance  = $request->getDataInt('balance') ?? 0;
+        $element->order    = $request->getDataInt('order') ?? 0;
+        $element->expanded = $request->getDataBool('expanded') ?? false;
+        $element->parent   = $request->getDataInt('parent');
 
         $accounts = $request->getDataList('accounts');
         foreach ($accounts as $account) {

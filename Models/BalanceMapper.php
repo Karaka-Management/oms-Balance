@@ -37,11 +37,11 @@ final class BalanceMapper extends DataMapperFactory
      * @since 1.0.0
      */
     public const COLUMNS = [
-        'balance_balance_id'   => ['name' => 'balance_balance_id',          'type' => 'int',    'internal' => 'id'],
-        'balance_balance_code' => ['name' => 'balance_balance_code',        'type' => 'string', 'internal' => 'code', 'autocomplete' => true],
-        'balance_balance_name' => ['name' => 'balance_balance_name',        'type' => 'string', 'internal' => 'name', 'autocomplete' => true],
+        'balance_balance_id'      => ['name' => 'balance_balance_id',          'type' => 'int',    'internal' => 'id'],
+        'balance_balance_code'    => ['name' => 'balance_balance_code',        'type' => 'string', 'internal' => 'code', 'autocomplete' => true],
+        'balance_balance_name'    => ['name' => 'balance_balance_name',        'type' => 'string', 'internal' => 'name', 'autocomplete' => true],
         'balance_balance_default' => ['name' => 'balance_balance_default',        'type' => 'bool', 'internal' => 'isDefault'],
-        'balance_balance_unit' => ['name' => 'balance_balance_unit',        'type' => 'int', 'internal' => 'unit'],
+        'balance_balance_unit'    => ['name' => 'balance_balance_unit',        'type' => 'int', 'internal' => 'unit'],
     ];
 
     /**
