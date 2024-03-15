@@ -153,7 +153,7 @@ final class Installer extends InstallerAbstract
             }
 
             $module->apiBalanceElementCreate($request, $response);
-            $responseData = $response->getData('');
+            $responseData = $response->getDataArray('');
 
             $balanceElement = \is_array($responseData['response'])
                 ? $responseData['response']
