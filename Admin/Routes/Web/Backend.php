@@ -10,6 +10,7 @@ return [
         [
             'dest'       => '\Modules\Balance\Controller\BackendController:viewBalanceDashboard',
             'verb'       => RouteVerb::GET,
+            'active' => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,

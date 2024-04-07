@@ -27,5 +27,6 @@ return ['Balance' => [
     'Subtotal'    => 'Subtotal',
     'Total'       => 'Total',
     'Diff'        => 'Diff',
+    'Settings'        => 'Settings',
     'Diff%'       => 'Diff %',
 ]];
