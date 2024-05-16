@@ -86,8 +86,8 @@ final class Installer extends InstallerAbstract
             $module->apiBalanceCreate($request, $response);
             $responseData = $response->getDataArray('');
 
-            $balance = \is_array($responseData['response'])
-                ? $responseData['response']
+            $balance = \is_array($responseData['response'] ?? [])
+                ? ($responseData['response'] ?? [])
                 : $responseData['response']->toArray();
 
             $fileContent = \file_get_contents(__DIR__ . '/Install/Coa/' . $file);
@@ -155,8 +155,8 @@ final class Installer extends InstallerAbstract
             $module->apiBalanceElementCreate($request, $response);
             $responseData = $response->getDataArray('');
 
-            $balanceElement = \is_array($responseData['response'])
-                ? $responseData['response']
+            $balanceElement = \is_array($responseData['response'] ?? [])
+                ? ($responseData['response'] ?? [])
                 : $responseData['response']->toArray();
 
             $isFirst = true;
